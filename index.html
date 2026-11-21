@@ -100,7 +100,41 @@ body:not(.landing-mode) .hero h1 span{background:linear-gradient(95deg,#65c7ff,#
 body:not(.landing-mode) .support-box{background:radial-gradient(circle at 87% 18%,#ef6d2850,transparent 35%),linear-gradient(105deg,#122b52,#101722);border-color:#356dae}
 @media(max-width:880px){.featured-video{grid-template-columns:1fr}.featured-visual{aspect-ratio:16/9;min-height:0}.featured-detail{padding:24px}.hero-promos{grid-template-columns:1fr}.hero-promos a{padding:14px 18px}.hero-promos strong{font-size:16px}}
 
-#clips .clip-tile:nth-child(1){background:linear-gradient(145deg,#052d33,#121720);border-color:#4ed6da44}#clips .clip-tile:nth-child(2){background:linear-gradient(145deg,#58121c,#17131b);border-color:#e74c5a44}#clips .clip-tile:nth-child(3){background:linear-gradient(145deg,#322056,#15111e);border-color:#9c79ee44}#clips .clip-tile:nth-child(1) .clip-cover{background:linear-gradient(130deg,#17343c,#131826);color:#59e2eb}#clips .clip-tile:nth-child(2) .clip-cover{background:linear-gradient(130deg,#631823,#19121b);color:#ff7782}#clips .clip-tile:nth-child(3) .clip-cover{background:linear-gradient(130deg,#492e6a,#1b152a);color:#bc91ff}</style>
+#clips .clip-tile:nth-child(1){background:linear-gradient(145deg,#052d33,#121720);border-color:#4ed6da44}#clips .clip-tile:nth-child(2){background:linear-gradient(145deg,#58121c,#17131b);border-color:#e74c5a44}#clips .clip-tile:nth-child(3){background:linear-gradient(145deg,#322056,#15111e);border-color:#9c79ee44}#clips .clip-tile:nth-child(1) .clip-cover{background:linear-gradient(130deg,#17343c,#131826);color:#59e2eb}#clips .clip-tile:nth-child(2) .clip-cover{background:linear-gradient(130deg,#631823,#19121b);color:#ff7782}#clips .clip-tile:nth-child(3) .clip-cover{background:linear-gradient(130deg,#492e6a,#1b152a);color:#bc91ff}
+/* Campanhas de parceiros: banners de alto contraste, sem alegações permanentes de desconto */
+#parceiros .partner-campaigns{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px}
+#parceiros .partner-campaign{grid-column:span 2;display:flex;flex-direction:column;min-height:410px;overflow:hidden;padding:0;background:#151a22!important;border:1px solid #ffffff28;border-radius:24px;position:relative;box-shadow:0 16px 50px #0005;transition:transform .22s,box-shadow .22s,border-color .22s}
+#parceiros .partner-campaign:nth-child(-n+2){grid-column:span 3;min-height:475px}
+#parceiros .partner-campaign:before{display:none}
+#parceiros .partner-campaign:hover{transform:translateY(-6px);box-shadow:0 25px 66px #0009;border-color:#ffffff75}
+#parceiros .campaign-art{min-height:202px;position:relative;overflow:hidden;padding:24px;display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between}
+#parceiros .partner-campaign:nth-child(-n+2) .campaign-art{min-height:245px}
+#parceiros .campaign-art:after{content:"";position:absolute;pointer-events:none;inset:0;opacity:.18;background-image:linear-gradient(45deg,transparent 47%,#fff 49%,transparent 51%);background-size:70px 70px}
+#parceiros .campaign-logo{position:relative;z-index:2;color:white;font:900 30px/1 'Barlow Condensed',sans-serif;letter-spacing:.04em;text-shadow:0 3px 14px #0005}
+#parceiros .campaign-headline{position:relative;z-index:2;color:white;font:900 clamp(27px,3.4vw,51px)/.9 'Barlow Condensed',sans-serif;letter-spacing:.025em;text-shadow:0 4px 16px #0009}
+#parceiros .campaign-copy{padding:23px 25px 25px;display:flex;flex:1;flex-direction:column}
+#parceiros .campaign-eyebrow{color:#95bdeb;font-weight:850;font-size:9px;letter-spacing:.15em}
+#parceiros .campaign-copy h3{font:800 clamp(24px,2.6vw,35px)/1.05 'Barlow Condensed',sans-serif;margin:13px 0 7px;color:#fff}
+#parceiros .campaign-copy p{font-size:12px;color:#adb9c9;line-height:1.65;flex:1}
+#parceiros .campaign-button{display:flex;align-items:center;justify-content:space-between;gap:12px;background:#ffffffee;color:#101620;font-size:11px;font-weight:900;letter-spacing:.05em;border-radius:12px;padding:13px 15px;margin-top:18px}
+#parceiros .campaign-button b{font-size:17px}
+#parceiros .campaign-code,#parceiros .campaign-season:not(:empty){display:inline-block;align-self:flex-start;margin-top:12px;background:#ffffff19;color:white;padding:7px 10px;border-radius:8px;border:1px solid #ffffff2c;font-size:10px;font-weight:800}
+#parceiros .partner-prozis .campaign-art{background:radial-gradient(circle at 80% 35%,#ff867c8c,transparent 40%),linear-gradient(125deg,#ff161f,#850c14)}
+#parceiros .partner-prozis .campaign-logo{font-size:46px;font-style:italic;letter-spacing:-.04em}
+#parceiros .campaign-orbit{position:absolute;border:28px solid #ffffff24;width:270px;height:270px;border-radius:50%;right:-55px;top:-50px;transform:rotate(-20deg)}
+#parceiros .partner-fragfuel .campaign-art{background:radial-gradient(circle at 90% 30%,#ffd23a91,transparent 43%),linear-gradient(125deg,#ef161e,#8b0e18)}
+#parceiros .partner-fragfuel .campaign-logo{font-size:44px;letter-spacing:-.04em;text-shadow:3px 3px 0 #111}
+#parceiros .campaign-bolt{position:absolute;width:80px;height:190px;background:#ffec62;clip-path:polygon(54% 0,12% 57%,47% 57%,28% 100%,90% 37%,55% 37%);right:62px;top:6px;filter:drop-shadow(0 4px 15px #0005);transform:rotate(12deg)}
+#parceiros .partner-instant .campaign-art{background:radial-gradient(circle at 75% 40%,#ffc3567f,transparent 44%),linear-gradient(125deg,#fb7317,#702e12)}
+#parceiros .partner-instant .campaign-gamepad{position:absolute;right:30px;top:35px;border:8px solid #ffffff28;border-radius:50%;width:122px;height:122px;display:grid;place-items:center;color:#ffffff40;font:900 58px 'Barlow Condensed',sans-serif}
+#parceiros .partner-otm .campaign-art{background:radial-gradient(circle at 80% 35%,#b6a1ff6c,transparent 43%),linear-gradient(125deg,#58349d,#21153b)}
+#parceiros .partner-design .campaign-art{background:radial-gradient(circle at 85% 30%,#81c8ff91,transparent 43%),linear-gradient(125deg,#1279d6,#0c234c)}
+#parceiros .partner-design .campaign-logo b{font-weight:500}
+#parceiros .helper{margin-top:23px}
+@media(max-width:980px){#parceiros .partner-campaign,#parceiros .partner-campaign:nth-child(-n+2){grid-column:span 3}#parceiros .partner-campaign:nth-child(-n+2){min-height:410px}}
+@media(max-width:650px){#parceiros .partner-campaigns{grid-template-columns:1fr}#parceiros .partner-campaign,#parceiros .partner-campaign:nth-child(-n+2){grid-column:1;min-height:0}#parceiros .campaign-art,#parceiros .partner-campaign:nth-child(-n+2) .campaign-art{min-height:190px}#parceiros .campaign-copy{padding:20px}#parceiros .campaign-headline{font-size:37px}}
+
+</style>
 <style>
 .video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.video-item,.video-placeholder{display:flex;flex-direction:column;overflow:hidden;background:#141923;border:1px solid rgba(255,255,255,.08);border-radius:20px;transition:transform .2s,border-color .2s}.video-item:hover{transform:translateY(-4px);border-color:#328ce8}.video-item img{aspect-ratio:16/9;object-fit:cover;width:100%;background:#0a1527}.video-body{padding:18px}.video-body h3{font:800 23px/1.07 'Barlow Condensed',sans-serif;margin:0 0 12px}.video-body p,.video-body small{font-size:12px;color:#a8b5c7}.video-body a{color:#71bdff;font-size:12px;font-weight:800}.video-visual{min-height:170px;display:grid;place-items:center;font-size:58px;color:#47a2ff;background:radial-gradient(circle,#173b6d,#111721)}.clip-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.clip-tile{display:flex;flex-direction:column;gap:10px;border-radius:20px;padding:14px;background:#131820;border:1px solid rgba(255,255,255,.08);transition:transform .2s}.clip-tile:hover{transform:translateY(-4px)}.clip-cover{height:220px;border-radius:13px;background:linear-gradient(145deg,#192f51,#11141c 60%,#4d2a12);display:grid;place-items:center;color:#66b8ff;text-shadow:0 0 24px #167fe5;font-size:58px}.clip-tile b{font-size:14px}.clip-tile span{font-size:12px;color:#70baff}.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center}.about-art{border:1px solid rgba(83,163,255,.3);border-radius:24px;padding:48px 20px;min-height:270px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(circle at center,rgba(24,112,220,.26),transparent 56%),#101318;box-shadow:inset 0 0 80px #0b43852b}.about-script{font:400 clamp(60px,7vw,110px)/1 'Yellowtail',cursive;text-shadow:0 0 20px #b8ceff44}.about-script b{font-weight:400;color:#249aff;text-shadow:0 0 24px #007bff}.about-art div{font-size:10px;letter-spacing:.22em;color:#9facbf;margin-top:25px}.contact-panel{border:1px solid #325a8f66;border-radius:24px;padding:35px;display:flex;align-items:center;justify-content:space-between;gap:30px;background:linear-gradient(120deg,#101821,#12131b)}.schedule-action{display:flex;align-items:center;gap:15px;margin-top:17px}#calendar-msg{font-size:12px;color:#a5b5ca}.mobile-dock{display:none}.marq-item:nth-child(3) b,.marq-item:nth-child(4) b{font-size:14px}
 @media(max-width:850px){.video-grid,.clip-grid{grid-template-columns:repeat(2,1fr)}.about-grid{grid-template-columns:1fr}.contact-panel{flex-direction:column;align-items:flex-start}}
@@ -282,12 +316,22 @@ body:not(.landing-mode) .support-box{background:radial-gradient(circle at 87% 18
 <p class="sub">Descobre os nossos parceiros, aproveita os links e códigos divulgados e ajuda a apoiar a criação de novos conteúdos.</p>
 </div>
 </div>
-<div class="partners">
-<a class="partner" href="https://prozis.com/TYpd" rel="noopener" target="_blank"><h4>PROZIS</h4><p>Nutrição, fitness e lifestyle com o teu link oficial.</p><div class="p-foot"><span>Visitar ↗</span><span class="coupon">Link oficial</span></div></a>
-<a class="partner" href="https://fragfuel.pt/?rs_ref=aO08M6YU" rel="noopener" target="_blank"><h4>FRAGFUEL</h4><p>Energia e produtos voltados para gaming.</p><div class="p-foot"><span>Visitar ↗</span><span class="coupon">Parceria</span></div></a>
-<a class="partner" href="https://discord.gg/t38ASKZwYm" rel="noopener" target="_blank"><h4>OTM</h4><p>Comunidade e parceria OTM com código divulgado por ti.</p><div class="p-foot"><span>Abrir Discord ↗</span><span class="coupon">LORDJON · 10%</span></div></a>
-<a class="partner" href="https://www.instant-gaming.com/?igr=lordjon" rel="noopener" target="_blank"><h4>INSTANT GAMING</h4><p>Jogos digitais com o teu link de afiliado.</p><div class="p-foot"><span>Ver jogos ↗</span><span class="coupon">Afiliado</span></div></a>
-<a class="partner" href="http://jmdesignpt.bio.link/" rel="noopener" target="_blank"><h4>JM DESIGN</h4><p>Serviços criativos e design gráfico.</p><div class="p-foot"><span>Visitar ↗</span><span class="coupon">LORDJON · 10%</span></div></a>
+<div class="partners partner-campaigns">
+<a class="partner partner-campaign partner-prozis" href="https://prozis.com/TYpd" rel="noopener noreferrer" target="_blank" aria-label="Ver campanhas Prozis pelo link LORDJON">
+<div class="campaign-art"><span class="campaign-logo">PROZIS</span><span class="campaign-orbit"></span><span class="campaign-headline">SUPERA OS<br>TEUS LIMITES.</span></div>
+<div class="campaign-copy"><span class="campaign-eyebrow">PARCEIRO LORDJON · FITNESS & NUTRIÇÃO</span><h3>Ofertas que dão energia aos teus objetivos.</h3><p>Descobre suplementos, roupa de treino e oportunidades na loja Prozis.</p><div class="campaign-season" data-promo-until="2026-11-30" data-promo-text="BNOVEMBER · Promoções em produtos selecionados"></div><span class="campaign-button">EXPLORAR OFERTAS <b>↗</b></span></div></a>
+<a class="partner partner-campaign partner-fragfuel" href="https://fragfuel.pt/?rs_ref=aO08M6YU" rel="noopener noreferrer" target="_blank" aria-label="Visitar FragFuel pelo link LORDJON">
+<div class="campaign-art"><span class="campaign-logo">FRAG<span>FUEL</span></span><span class="campaign-bolt" aria-hidden="true"></span><span class="campaign-headline">FEED YOUR<br>PASSIONS.</span></div>
+<div class="campaign-copy"><span class="campaign-eyebrow">PARCEIRO LORDJON · SNACKS & BEBIDAS</span><h3>Descobre sabores fora do habitual.</h3><p>Snacks, doces e bebidas importados para acompanhar as tuas sessões.</p><div class="campaign-season" data-promo-until="2026-11-30" data-promo-text="BLACK MONTH · Ofertas sazonais na FragFuel"></div><span class="campaign-button">VER PROMOÇÕES <b>↗</b></span></div></a>
+<a class="partner partner-campaign partner-instant" href="https://www.instant-gaming.com/?igr=lordjon" rel="noopener noreferrer" target="_blank" aria-label="Ver jogos Instant Gaming pelo link LORDJON">
+<div class="campaign-art"><span class="campaign-logo">INSTANT <b>GAMING</b></span><span class="campaign-gamepad" aria-hidden="true">IG</span><span class="campaign-headline">O PRÓXIMO<br>JOGO ESPERA.</span></div>
+<div class="campaign-copy"><span class="campaign-eyebrow">PARCEIRO LORDJON · JOGOS DIGITAIS</span><h3>Encontra o teu próximo jogo.</h3><p>Explora o catálogo e consulta os preços e descontos disponíveis.</p><span class="campaign-button">DESCOBRIR JOGOS <b>↗</b></span></div></a>
+<a class="partner partner-campaign partner-otm" href="https://discord.gg/t38ASKZwYm" rel="noopener noreferrer" target="_blank" aria-label="Aceder à parceria OTM pelo Discord">
+<div class="campaign-art"><span class="campaign-logo">OTM</span><span class="campaign-headline">A TUA PRÓXIMA<br>CRIAÇÃO.</span></div>
+<div class="campaign-copy"><span class="campaign-eyebrow">PARCEIRO LORDJON · COMUNIDADE</span><h3>Vantagens para quem acompanha o canal.</h3><p>Entra no Discord OTM e consulta as condições da parceria.</p><span class="campaign-code">CÓDIGO LORDJON · 10%</span><span class="campaign-button">ENTRAR NA OTM <b>↗</b></span></div></a>
+<a class="partner partner-campaign partner-design" href="http://jmdesignpt.bio.link/" rel="noopener noreferrer" target="_blank" aria-label="Ver serviços JM Design pelo link LORDJON">
+<div class="campaign-art"><span class="campaign-logo">JM <b>DESIGN</b></span><span class="campaign-headline">DÁ VIDA<br>À TUA IDEIA.</span></div>
+<div class="campaign-copy"><span class="campaign-eyebrow">PARCEIRO LORDJON · DESIGN GRÁFICO</span><h3>Uma identidade visual que se destaca.</h3><p>Explora serviços criativos e descobre o projeto.</p><span class="campaign-code">CÓDIGO LORDJON · 10%</span><span class="campaign-button">VER SERVIÇOS <b>↗</b></span></div></a>
 </div>
 <p class="helper">Os descontos e condições podem mudar. Confirma sempre no destino antes de comprar.</p>
 </div>
@@ -439,6 +483,14 @@ calButton.addEventListener('click',()=>{const schedule=typeof LIVE_SCHEDULE==='o
  const date=y+m+d;const start=date+'T'+pad(hour)+pad(minute)+'00';const endHour=(hour+2)%24;const end=date+'T'+pad(endHour)+pad(minute)+'00';
  const u='https://calendar.google.com/calendar/render?action=TEMPLATE&text='+encodeURIComponent('Live LORDJON · '+(info.title||'Twitch'))+'&dates='+start+'/'+end+'&ctz=Europe%2FLisbon&details='+encodeURIComponent('https://www.twitch.tv/lordjon_pt');
  window.open(u,'_blank','noopener');
+});
+
+// As campanhas sazonais só aparecem até ao último dia anunciado pela marca.
+// Após o prazo, os cartões continuam a mostrar uma apresentação permanente.
+document.querySelectorAll('[data-promo-until]').forEach(el=>{
+ const limit=el.getAttribute('data-promo-until');
+ const today=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Lisbon',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+ if(today<=limit)el.textContent=el.getAttribute('data-promo-text')||'';
 });
 </script></body>
 </html>
