@@ -164,7 +164,7 @@ body:not(.landing-mode) .support-box{background:radial-gradient(circle at 87% 18
 @media(prefers-reduced-motion:reduce){.relaunch-feature,.relaunch-actions a{transition:none}}
 
 
-.relaunch-primary .stream-live{color:#fff;background:#f72b4d;border-radius:7px;padding:4px 8px;box-shadow:0 0 19px #f72b4d8b;animation:live-flash 1.7s infinite alternate}@keyframes live-flash{to{box-shadow:0 0 28px #f72b4d55}}</style>
+.relaunch-primary .stream-live{color:#fff;background:#f72b4d;border-radius:7px;padding:4px 8px;box-shadow:0 0 19px #f72b4d8b;animation:live-flash 1.7s infinite alternate}@keyframes live-flash{to{box-shadow:0 0 28px #f72b4d55}}.live-catalog{margin:12px 0 24px}.live-catalog:empty{display:none}.catalog-status{padding:13px 17px;margin:22px 0 0;border:1px solid #335578;border-radius:12px;background:#12213a;color:#b8cee5;font-size:12px}.live-product .shop-art img{height:100%;width:100%;object-fit:cover}.catalog-placeholder{font:900 58px 'Barlow Condensed',sans-serif;letter-spacing:-.1em;color:#64b9ff}.dynamic-promotion .campaign-art{position:relative}.dynamic-promotion .campaign-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.dynamic-promotion .campaign-art strong{font:900 44px 'Barlow Condensed',sans-serif;color:#fff}.dynamic-promotion .campaign-art{background:linear-gradient(120deg,#285b9c,#10233e)}#dynamic-promotions:empty{display:none}#dynamic-promotions:not(:empty){display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin:15px 0 26px}@media(max-width:800px){#dynamic-promotions:not(:empty){grid-template-columns:1fr}}</style>
 <style>
 .video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.video-item,.video-placeholder{display:flex;flex-direction:column;overflow:hidden;background:#141923;border:1px solid rgba(255,255,255,.08);border-radius:20px;transition:transform .2s,border-color .2s}.video-item:hover{transform:translateY(-4px);border-color:#328ce8}.video-item img{aspect-ratio:16/9;object-fit:cover;width:100%;background:#0a1527}.video-body{padding:18px}.video-body h3{font:800 23px/1.07 'Barlow Condensed',sans-serif;margin:0 0 12px}.video-body p,.video-body small{font-size:12px;color:#a8b5c7}.video-body a{color:#71bdff;font-size:12px;font-weight:800}.video-visual{min-height:170px;display:grid;place-items:center;font-size:58px;color:#47a2ff;background:radial-gradient(circle,#173b6d,#111721)}.clip-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.clip-tile{display:flex;flex-direction:column;gap:10px;border-radius:20px;padding:14px;background:#131820;border:1px solid rgba(255,255,255,.08);transition:transform .2s}.clip-tile:hover{transform:translateY(-4px)}.clip-cover{height:220px;border-radius:13px;background:linear-gradient(145deg,#192f51,#11141c 60%,#4d2a12);display:grid;place-items:center;color:#66b8ff;text-shadow:0 0 24px #167fe5;font-size:58px}.clip-tile b{font-size:14px}.clip-tile span{font-size:12px;color:#70baff}.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center}.about-art{border:1px solid rgba(83,163,255,.3);border-radius:24px;padding:48px 20px;min-height:270px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(circle at center,rgba(24,112,220,.26),transparent 56%),#101318;box-shadow:inset 0 0 80px #0b43852b}.about-script{font:400 clamp(60px,7vw,110px)/1 'Yellowtail',cursive;text-shadow:0 0 20px #b8ceff44}.about-script b{font-weight:400;color:#249aff;text-shadow:0 0 24px #007bff}.about-art div{font-size:10px;letter-spacing:.22em;color:#9facbf;margin-top:25px}.contact-panel{border:1px solid #325a8f66;border-radius:24px;padding:35px;display:flex;align-items:center;justify-content:space-between;gap:30px;background:linear-gradient(120deg,#101821,#12131b)}.schedule-action{display:flex;align-items:center;gap:15px;margin-top:17px}#calendar-msg{font-size:12px;color:#a5b5ca}.mobile-dock{display:none}.marq-item:nth-child(3) b,.marq-item:nth-child(4) b{font-size:14px}
 @media(max-width:850px){.video-grid,.clip-grid{grid-template-columns:repeat(2,1fr)}.about-grid{grid-template-columns:1fr}.contact-panel{flex-direction:column;align-items:flex-start}}
@@ -306,7 +306,7 @@ body:not(.landing-mode) .support-box{background:radial-gradient(circle at 87% 18
 <div class="shop-step"><small>03 / RESGATA</small><b>Troca por recompensas</b><p>Quando ativarmos os produtos, os resgates serão feitos nas recompensas do canal.</p></div>
 </div>
 <div class="shop-head"><span class="shop-spark">✦</span><strong>Prévia do catálogo</strong> <span>· Exemplos sujeitos a confirmação</span></div>
-<div class="shop-list" style="margin-top:14px">
+<div class="catalog-status" id="catalog-status" role="status">A preparar a loja LORDJON. O catálogo com produtos reais aparece aqui quando for publicado.</div><div id="dynamic-catalog" class="shop-list live-catalog" aria-live="polite"></div><div class="shop-list" style="margin-top:14px">
 <article class="shop-product"><div class="shop-art"><span class="shop-emoji" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2.5" width="6" height="12" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V22m-4 0h8"/></svg></span></div><div class="shop-body"><span class="label">Interação na live</span><h3>Mensagem especial</h3><p>Uma mensagem ou saudação personalizada durante a transmissão, caso aprovada.</p><div class="shop-bottom"><span class="points-tag">Custo por definir</span><button class="shop-locked" disabled>Brevemente</button></div></div></article>
 <article class="shop-product"><div class="shop-art"><span class="shop-emoji" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 8h10c3 0 4 2 5 8 1 5-2 5-5 2l-2-2H9l-2 2c-3 3-6 3-5-2 1-6 2-8 5-8z"/><path d="M7 12h5M9.5 9.5v5M16 12h.01M19 14h.01"/></svg></span></div><div class="shop-body"><span class="label">Participação</span><h3>Escolhe o desafio</h3><p>Sugere um desafio para a próxima live, sujeito a regras e disponibilidade.</p><div class="shop-bottom"><span class="points-tag">Custo por definir</span><button class="shop-locked" disabled>Brevemente</button></div></div></article>
 <article class="shop-product"><div class="shop-art"><span class="shop-emoji" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2.5 2.9 6 6.6.95-4.8 4.7 1.15 6.6L12 17.65 6.15 20.75l1.1-6.6-4.75-4.7 6.6-.95z"/></svg></span></div><div class="shop-body"><span class="label">Comunidade</span><h3>Destaque de fã</h3><p>Um destaque especial na comunidade LORDJON, se esta recompensa for ativada.</p><div class="shop-bottom"><span class="points-tag">Custo por definir</span><button class="shop-locked" disabled>Brevemente</button></div></div></article>
@@ -323,7 +323,7 @@ body:not(.landing-mode) .support-box{background:radial-gradient(circle at 87% 18
 <p class="sub">Descobre os nossos parceiros, aproveita os links e códigos divulgados e ajuda a apoiar a criação de novos conteúdos.</p>
 </div>
 </div>
-<div class="partners partner-campaigns">
+<div id="dynamic-promotions" class="partner-campaigns" aria-live="polite"></div><div class="partners partner-campaigns">
 <a class="partner partner-campaign partner-prozis" href="https://prozis.com/TYpd" rel="noopener noreferrer" target="_blank" aria-label="Ver campanhas Prozis pelo link LORDJON">
 <div class="campaign-art"><span class="campaign-logo">PROZIS</span><span class="campaign-orbit"></span><span class="campaign-headline">SUPERA OS<br>TEUS LIMITES.</span></div>
 <div class="campaign-copy"><span class="campaign-eyebrow">PARCEIRO LORDJON · FITNESS & NUTRIÇÃO</span><h3>Ofertas que dão energia aos teus objetivos.</h3><p>Descobre suplementos, roupa de treino e oportunidades na loja Prozis.</p><div class="campaign-season" data-promo-until="2026-11-30" data-promo-text="BNOVEMBER · Promoções em produtos selecionados"></div><span class="campaign-button">EXPLORAR OFERTAS <b>↗</b></span></div></a>
@@ -478,6 +478,41 @@ async function loadVideos(){
  }catch(e){/* mantém o acesso ao canal se a integração não estiver pronta */}
 }
 loadVideos();setInterval(loadVideos,20*60*1000);
+
+async function loadCatalog(){
+ try{
+  const response=await fetch('/api/catalog',{cache:'no-store'});if(!response.ok)return;
+  const data=await response.json();if(!data.configured)return;
+  const list=document.getElementById('dynamic-catalog'),status=document.getElementById('catalog-status');
+  const products=Array.isArray(data.products)?data.products:[];
+  if(products.length){
+   status.textContent='Catálogo publicado · Produtos e recompensas disponíveis para consulta.';
+   const cards=products.map(p=>{
+    const art=document.createElement('article');art.className='shop-product live-product';
+    const visual=document.createElement('div');visual.className='shop-art';
+    if(p.image_url&&/^https:\/\//i.test(p.image_url)){const img=document.createElement('img');img.src=p.image_url;img.loading='lazy';img.alt='Fotografia do produto '+p.name;visual.append(img)}
+    else {const text=document.createElement('span');text.className='catalog-placeholder';text.textContent='LJ';visual.append(text)}
+    const body=document.createElement('div');body.className='shop-body';
+    const type=document.createElement('span');type.className='label';type.textContent=p.category==='rewards'?'RECOMPENSA · PONTOS':'MERCHANDISING LORDJON';
+    const title=document.createElement('h3');title.textContent=p.name||'Produto LORDJON';
+    const detail=document.createElement('p');detail.textContent=p.description||'';
+    const bottom=document.createElement('div');bottom.className='shop-bottom';
+    const price=document.createElement('span');price.className='points-tag';
+    price.textContent=p.category==='rewards'?Number(p.points_cost||0).toLocaleString('pt-PT')+' pts':(Number(p.price_eur_cents||0)/100).toLocaleString('pt-PT',{style:'currency',currency:'EUR'});
+    const btn=document.createElement('button');btn.className='shop-locked';btn.disabled=true;btn.textContent=p.stock>0?'Compras em preparação':'Indisponível';
+    bottom.append(price,btn);body.append(type,title,detail,bottom);art.append(visual,body);return art
+   });list.replaceChildren(...cards);
+  }else status.textContent='Ainda não existem produtos publicados. Volta em breve.';
+  const promos=Array.isArray(data.promotions)?data.promotions:[];
+  const dest=document.getElementById('dynamic-promotions');dest.replaceChildren(...promos.filter(p=>{try{return new URL(p.target_url).protocol==='https:'}catch{return false}}).map(p=>{
+   const a=document.createElement('a');a.className='partner partner-campaign dynamic-promotion';a.href=p.target_url;a.target='_blank';a.rel='noopener noreferrer sponsored';
+   const visual=document.createElement('div');visual.className='campaign-art';if(p.banner_url&&/^https:\/\//.test(p.banner_url)){const img=document.createElement('img');img.loading='lazy';img.src=p.banner_url;img.alt='Campanha '+p.brand;visual.append(img)}else {const brand=document.createElement('strong');brand.textContent=p.brand;visual.append(brand)}
+   const body=document.createElement('div');body.className='campaign-copy';const eyebrow=document.createElement('span');eyebrow.className='campaign-eyebrow';eyebrow.textContent='OFERTA DO PARCEIRO · '+p.brand;const title=document.createElement('h3');title.textContent=p.headline;const desc=document.createElement('p');desc.textContent=p.details||'Consulta as condições na loja.';const action=document.createElement('span');action.className='campaign-button';action.textContent='VER CAMPANHA ↗';body.append(eyebrow,title,desc,action);a.append(visual,body);return a
+  }));
+ }catch(e){/* não mostra produtos fictícios nem substitui parceiros estáticos */}
+}
+loadCatalog();setInterval(loadCatalog,5*60*1000);
+
 const calButton=document.getElementById('calendar-export');
 calButton.addEventListener('click',()=>{const schedule=typeof LIVE_SCHEDULE==='object'?LIVE_SCHEDULE:{};
  const keys=Object.keys(schedule).map(Number).filter(n=>n>=0&&n<=6&&schedule[n]?.time);if(!keys.length){document.getElementById('calendar-msg').textContent='Os horários ainda não estão definidos.';return;}
