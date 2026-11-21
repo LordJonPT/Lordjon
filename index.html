@@ -164,7 +164,7 @@ body:not(.landing-mode) .support-box{background:radial-gradient(circle at 87% 18
 @media(prefers-reduced-motion:reduce){.relaunch-feature,.relaunch-actions a{transition:none}}
 
 
-</style>
+.relaunch-primary .stream-live{color:#fff;background:#f72b4d;border-radius:7px;padding:4px 8px;box-shadow:0 0 19px #f72b4d8b;animation:live-flash 1.7s infinite alternate}@keyframes live-flash{to{box-shadow:0 0 28px #f72b4d55}}</style>
 <style>
 .video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.video-item,.video-placeholder{display:flex;flex-direction:column;overflow:hidden;background:#141923;border:1px solid rgba(255,255,255,.08);border-radius:20px;transition:transform .2s,border-color .2s}.video-item:hover{transform:translateY(-4px);border-color:#328ce8}.video-item img{aspect-ratio:16/9;object-fit:cover;width:100%;background:#0a1527}.video-body{padding:18px}.video-body h3{font:800 23px/1.07 'Barlow Condensed',sans-serif;margin:0 0 12px}.video-body p,.video-body small{font-size:12px;color:#a8b5c7}.video-body a{color:#71bdff;font-size:12px;font-weight:800}.video-visual{min-height:170px;display:grid;place-items:center;font-size:58px;color:#47a2ff;background:radial-gradient(circle,#173b6d,#111721)}.clip-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.clip-tile{display:flex;flex-direction:column;gap:10px;border-radius:20px;padding:14px;background:#131820;border:1px solid rgba(255,255,255,.08);transition:transform .2s}.clip-tile:hover{transform:translateY(-4px)}.clip-cover{height:220px;border-radius:13px;background:linear-gradient(145deg,#192f51,#11141c 60%,#4d2a12);display:grid;place-items:center;color:#66b8ff;text-shadow:0 0 24px #167fe5;font-size:58px}.clip-tile b{font-size:14px}.clip-tile span{font-size:12px;color:#70baff}.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center}.about-art{border:1px solid rgba(83,163,255,.3);border-radius:24px;padding:48px 20px;min-height:270px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(circle at center,rgba(24,112,220,.26),transparent 56%),#101318;box-shadow:inset 0 0 80px #0b43852b}.about-script{font:400 clamp(60px,7vw,110px)/1 'Yellowtail',cursive;text-shadow:0 0 20px #b8ceff44}.about-script b{font-weight:400;color:#249aff;text-shadow:0 0 24px #007bff}.about-art div{font-size:10px;letter-spacing:.22em;color:#9facbf;margin-top:25px}.contact-panel{border:1px solid #325a8f66;border-radius:24px;padding:35px;display:flex;align-items:center;justify-content:space-between;gap:30px;background:linear-gradient(120deg,#101821,#12131b)}.schedule-action{display:flex;align-items:center;gap:15px;margin-top:17px}#calendar-msg{font-size:12px;color:#a5b5ca}.mobile-dock{display:none}.marq-item:nth-child(3) b,.marq-item:nth-child(4) b{font-size:14px}
 @media(max-width:850px){.video-grid,.clip-grid{grid-template-columns:repeat(2,1fr)}.about-grid{grid-template-columns:1fr}.contact-panel{flex-direction:column;align-items:flex-start}}
@@ -198,7 +198,7 @@ body:not(.landing-mode) .support-box{background:radial-gradient(circle at 87% 18
 <div class="relaunch-top"><div class="relaunch-kicker"><span class="relaunch-live-dot"></span> BEM-VINDO AO UNIVERSO LORDJON <span class="relaunch-edition">EDIÇÃO 2026</span></div>
 <div class="relaunch-layout">
 <div class="relaunch-copy"><div class="relaunch-small">STREAMING · GAMING · COMUNIDADE</div><h1 id="universe-title">O JOGO<br>NÃO <span>PARA.</span></h1><p>Mais do que uma live. Um universo onde encontras os novos episódios, a comunidade LORDJON, recompensas e os nossos parceiros.</p>
-<div class="relaunch-actions"><a class="relaunch-primary" href="https://www.twitch.tv/lordjon_pt" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 3h17v12l-5 5h-4l-3 3v-3H4z"/><path d="M11 8v5M16 8v5"/></svg> ENTRA NA LIVE <span>↗</span></a><a class="relaunch-secondary" href="#videos">VER ÚLTIMO VÍDEO <span>↓</span></a></div>
+<div class="relaunch-actions"><a class="relaunch-primary" href="https://www.twitch.tv/lordjon_pt" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 3h17v12l-5 5h-4l-3 3v-3H4z"/><path d="M11 8v5M16 8v5"/></svg> <span id="universe-live-status">VER TWITCH</span> <span>↗</span></a><a class="relaunch-secondary" href="#videos">VER ÚLTIMO VÍDEO <span>↓</span></a></div>
 <div class="relaunch-socialproof"><span class="relaunch-bar"></span> Twitch · YouTube · TikTok · Comunidade</div></div>
 <div class="relaunch-showcase" aria-hidden="true"><div class="relaunch-ring ring-one"></div><div class="relaunch-ring ring-two"></div><div class="relaunch-disc"></div><div class="relaunch-huge">LJ<span>.</span></div><div class="relaunch-side-label">EST. 2026 // PORTUGAL</div><div class="relaunch-bottom-line">CREATE · PLAY · CONNECT</div><div class="relaunch-stamp">LORDJON<br><strong>UNIVERSE</strong></div></div></div>
 </div></div>
@@ -210,7 +210,7 @@ body:not(.landing-mode) .support-box{background:radial-gradient(circle at 87% 18
 <div>
 <div class="kicker">LIVE CENTER</div>
 <h2>O canal <span>em destaque.</span></h2>
-<p class="sub">Acompanha a transmissão e entra diretamente na Twitch. O estado em direto será atualizado automaticamente assim que a integração estiver ligada.</p>
+<p class="sub">Acompanha o estado da transmissão em tempo real. Entra na live e participa na comunidade.</p>
 </div>
 </div>
 <div class="grid-2">
@@ -221,7 +221,7 @@ body:not(.landing-mode) .support-box{background:radial-gradient(circle at 87% 18
 <div class="card sidepad">
 <div class="kicker">Always on</div>
 <h3>Segue o LORDJON em direto.</h3>
-<p>Este bloco pode mostrar se estás online, o título da live e a categoria, quando a integração da Twitch estiver ativa.</p>
+<p>Quando os dados da Twitch estiverem ligados, verás aqui o jogo e o título da transmissão atual.</p>
 <div class="stack">
 <div class="meta"><small>Estado do canal</small><span id="live-text">Ainda não verificado</span></div>
 <div class="meta"><small>Jogo / categoria</small><span id="live-game">Consultar Twitch</span></div>
@@ -364,7 +364,7 @@ body:not(.landing-mode) .support-box{background:radial-gradient(circle at 87% 18
 <a href="#topo">Voltar ao topo ↑</a>
 </div>
 </footer>
-<script src="config.js"></script><script>
+<script>
 
 (function(){
  const goUniverse=()=>{document.body.classList.remove('landing-mode');window.scrollTo({top:0,behavior:'instant'});};
@@ -412,7 +412,7 @@ async function checkLive(){
   try{
     const ctrl=new AbortController();
     const timeout=setTimeout(()=>ctrl.abort(),8000);
-    const response=await fetch(window.LORDJON_API_URL ? window.LORDJON_API_URL.replace(/\/$/,'')+'/live' : '/api/live',{signal:ctrl.signal,cache:'no-store'});
+    const response=await fetch('/api/live',{signal:ctrl.signal,cache:'no-store'});
     clearTimeout(timeout);
     if(!response.ok) throw new Error('api unavailable');
     result=await response.json();
@@ -420,38 +420,36 @@ async function checkLive(){
   const label=document.getElementById('live-label');
   const txt=document.getElementById('live-text');
   const pill=document.getElementById('live-pill');
-  if(result.status==='live'){
+  if(result.configured===true&&result.live===true){
     pill.classList.add('live');
-    label.textContent='Em direto agora';
-    txt.textContent='Em direto';
-    document.getElementById('live-game').textContent=result.game||'Twitch';
+    label.textContent='EM DIRETO';
+    txt.textContent='Em direto · '+(Number.isInteger(result.viewerCount)?result.viewerCount+' a assistir':'Twitch');
+    document.getElementById('live-game').textContent=result.game||'Gaming';
     document.getElementById('live-title').textContent=result.title||'LORDJON na Twitch';
-  } else if(result.status==='offline'){
+    document.getElementById('universe-live-status').textContent='EM DIRETO AGORA';
+    document.getElementById('universe-live-status').classList.add('stream-live');
+  } else if(result.configured===true&&result.live===false){
     pill.classList.remove('live');
-    label.textContent='Fora do ar';
-    txt.textContent='Sem transmissão neste momento';
-    document.getElementById('live-game').textContent='Sem jogo em direto';
-    document.getElementById('live-title').textContent='Acompanha a próxima live na Twitch';
+    label.textContent='OFFLINE';
+    txt.textContent='Próxima transmissão por anunciar';
+    document.getElementById('live-game').textContent='Sem transmissão';
+    document.getElementById('live-title').textContent='Visita o canal para novidades';
+    document.getElementById('universe-live-status').textContent='ENTRAR NO CANAL';
+    document.getElementById('universe-live-status').classList.remove('stream-live');
   } else {
     pill.classList.remove('live');
-    label.textContent='Consultar Twitch';
-    txt.textContent='Estado indisponível neste momento';
+    label.textContent='CONSULTAR TWITCH';
+    txt.textContent='Estado não confirmado';
     document.getElementById('live-game').textContent='Consultar Twitch';
-    document.getElementById('live-title').textContent='Abre o canal para confirmar';
+    document.getElementById('live-title').textContent='O estado automático ainda não está disponível';
+    document.getElementById('universe-live-status').textContent='VER TWITCH';
+    document.getElementById('universe-live-status').classList.remove('stream-live');
   }
 }
 checkLive();
 setInterval(checkLive, 90000);
 </script>
 <nav aria-label="Acessos rápidos" class="mobile-dock"><a href="https://www.twitch.tv/lordjon_pt" rel="noopener" target="_blank"><span>▶</span> Live</a><a href="#videos"><span>▣</span> Vídeos</a><a href="#loja"><span>✦</span> Loja</a><a href="#discord"><span>#</span> Discord</a></nav><script>
-// O site estático usa um Worker separado para ler as APIs com segurança.
-const STREAM_API = window.LORDJON_API_URL || '';
-async function apiRead(endpoint){
- if(!STREAM_API) throw new Error('integração ainda não configurada');
- const controller=new AbortController();const timer=setTimeout(()=>controller.abort(),8500);
- try {const r=await fetch(STREAM_API.replace(/\/$/,'')+endpoint,{signal:controller.signal,cache:'no-store'});if(!r.ok)throw new Error('Indisponível');return await r.json();}
- finally {clearTimeout(timer)}
-}
 function createVideo(v){
  const a=document.createElement('a');a.className='video-item';a.href='https://www.youtube.com/watch?v='+encodeURIComponent(v.id);a.target='_blank';a.rel='noopener noreferrer';
  const im=document.createElement('img');im.src='https://i.ytimg.com/vi/'+encodeURIComponent(v.id)+'/hqdefault.jpg';im.loading='lazy';im.alt='Thumbnail: '+(v.title||'Vídeo do LORDJON');
