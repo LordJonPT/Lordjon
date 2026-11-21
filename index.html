@@ -27,6 +27,20 @@
 @media (max-width: 1060px){.hero-grid,.grid-2{grid-template-columns:1fr}.hero-art{max-width:680px}.marquee{grid-template-columns:repeat(2,1fr)}.partners{grid-template-columns:repeat(3,1fr)}.socials{grid-template-columns:repeat(2,1fr)}}
 @media (max-width: 760px){.wrap{width:min(100% - 28px,560px)}.links{display:none}.nav{height:72px}.mark{font-size:38px}.badge-live{display:none}.hero{padding-top:48px}.hero h1{font-size:66px}.hero-panel{gap:10px}.mini-stat{min-width:calc(50% - 6px)}.marquee,.socials,.discords,.partners{grid-template-columns:1fr}.calendar{grid-template-columns:repeat(2,1fr)}.support-box{align-items:flex-start;flex-direction:column}.support-box h2{font-size:42px}.tag-float{left:12px;right:12px;bottom:12px}}
 @media (max-width: 460px){.hero h1{font-size:56px}.calendar{grid-template-columns:1fr}.mini-stat{min-width:100%}}
+
+/* LORDJON 4.0 — shop & refreshed visuals */
+:root{--blue:#168bff;--blue2:#76c6ff;--radius:26px}
+body{background:radial-gradient(ellipse at 83% 7%,rgba(24,106,221,.15),transparent 32%),radial-gradient(ellipse at 10% 47%,rgba(255,146,48,.045),transparent 32%),#080a0e}
+.top{box-shadow:0 10px 40px rgba(0,0,0,.25)}.hero{isolation:isolate}.hero:after{opacity:.26}
+.btn,.cta-nav{box-shadow:0 6px 27px rgba(10,92,220,.14);transition:transform .2s,box-shadow .2s}.btn:hover,.cta-nav:hover{transform:translateY(-3px);box-shadow:0 12px 34px rgba(22,139,255,.26)}
+.section-head .kicker{letter-spacing:.25em}.section h2{letter-spacing:-.012em}
+.shop-section{position:relative;overflow:hidden;border-block:1px solid #22558933;background:radial-gradient(ellipse at 92% 8%,#12549a27,transparent 46%),linear-gradient(160deg,#0b1019,#0b0d13 72%)}
+.shop-head{display:flex;align-items:center;gap:9px;font-size:12px;color:#a8c9eb}.shop-head .shop-spark{color:#ffc581}
+.shop-intro{display:grid;grid-template-columns:1fr auto;gap:22px;align-items:end}.shop-switch{display:flex;align-items:center;gap:9px;padding:7px 13px;background:#112039;border:1px solid #25466b;border-radius:999px;color:#afd6ff;font-size:11px;font-weight:800;letter-spacing:.04em}
+.shop-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:28px 0}.shop-step{border:1px solid #ffffff12;background:#ffffff08;padding:19px 20px;border-radius:18px}.shop-step small{display:block;color:#65b6ff;font-weight:900;letter-spacing:.15em;font-size:11px}.shop-step b{display:block;margin:9px 0 4px;font-size:15px}.shop-step p{color:#a6b5c8;font-size:12px}
+.shop-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.shop-product{position:relative;display:flex;flex-direction:column;overflow:hidden;min-height:345px;border:1px solid #ffffff1d;border-radius:23px;background:linear-gradient(180deg,#192032,#0e121b);transition:transform .2s,border-color .2s}.shop-product:hover{transform:translateY(-5px);border-color:#338af2}.shop-art{height:150px;position:relative;display:grid;place-items:center;background:radial-gradient(circle,#116bc32d,transparent 61%),linear-gradient(140deg,#122137,#0d111b);border-bottom:1px solid #ffffff12}.shop-art:after{content:"";position:absolute;inset:12px;border:1px solid #ffffff0a;border-radius:16px}.shop-art .shop-emoji{font-size:56px;filter:drop-shadow(0 8px 15px #0008)}.shop-product:nth-child(2) .shop-art{background:radial-gradient(circle,#e99f3627,transparent 61%),#17171c}.shop-product:nth-child(3) .shop-art{background:radial-gradient(circle,#7a51ed35,transparent 61%),#101322}.shop-body{padding:23px;display:flex;flex:1;flex-direction:column}.shop-product .label{font-size:10px;text-transform:uppercase;font-weight:800;letter-spacing:.16em;color:#81bfff}.shop-product h3{font-size:29px;line-height:1.07;margin:9px 0}.shop-product p{font-size:12px;color:#aab8cb;flex:1;line-height:1.7}.shop-bottom{margin-top:20px;display:flex;gap:8px;justify-content:space-between;align-items:center}.points-tag{font-size:11px;color:#ffe1a4;background:#f1aa2420;border:1px solid #f1aa2444;border-radius:10px;padding:8px 11px;font-weight:800}.shop-locked{padding:9px 12px;border:1px solid #39689e;border-radius:10px;color:#b5d7ff;font-size:11px;font-weight:800;opacity:.85;cursor:not-allowed;background:transparent}.shop-warning{display:flex;align-items:start;gap:14px;background:#0b1827;border:1px solid #23517d;border-radius:16px;margin-top:22px;padding:20px}.shop-warning b{display:block;font-size:13px}.shop-warning p{font-size:12px;color:#afc1d8;margin-top:5px}.shop-warning a{color:#89c5ff;text-decoration:underline}.shop-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+@media(max-width:950px){.shop-list{grid-template-columns:repeat(2,1fr)}}@media(max-width:700px){.shop-intro{grid-template-columns:1fr}.shop-steps,.shop-list{grid-template-columns:1fr}.shop-step{padding:16px}.shop-art{height:126px}.shop-product{min-height:308px}.shop-body{padding:20px}}
+
 </style>
 <style>
 .video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.video-item,.video-placeholder{display:flex;flex-direction:column;overflow:hidden;background:#141923;border:1px solid rgba(255,255,255,.08);border-radius:20px;transition:transform .2s,border-color .2s}.video-item:hover{transform:translateY(-4px);border-color:#328ce8}.video-item img{aspect-ratio:16/9;object-fit:cover;width:100%;background:#0a1527}.video-body{padding:18px}.video-body h3{font:800 23px/1.07 'Barlow Condensed',sans-serif;margin:0 0 12px}.video-body p,.video-body small{font-size:12px;color:#a8b5c7}.video-body a{color:#71bdff;font-size:12px;font-weight:800}.video-visual{min-height:170px;display:grid;place-items:center;font-size:58px;color:#47a2ff;background:radial-gradient(circle,#173b6d,#111721)}.clip-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.clip-tile{display:flex;flex-direction:column;gap:10px;border-radius:20px;padding:14px;background:#131820;border:1px solid rgba(255,255,255,.08);transition:transform .2s}.clip-tile:hover{transform:translateY(-4px)}.clip-cover{height:220px;border-radius:13px;background:linear-gradient(145deg,#192f51,#11141c 60%,#4d2a12);display:grid;place-items:center;color:#66b8ff;text-shadow:0 0 24px #167fe5;font-size:58px}.clip-tile b{font-size:14px}.clip-tile span{font-size:12px;color:#70baff}.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center}.about-art{border:1px solid rgba(83,163,255,.3);border-radius:24px;padding:48px 20px;min-height:270px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(circle at center,rgba(24,112,220,.26),transparent 56%),#101318;box-shadow:inset 0 0 80px #0b43852b}.about-script{font:400 clamp(60px,7vw,110px)/1 'Yellowtail',cursive;text-shadow:0 0 20px #b8ceff44}.about-script b{font-weight:400;color:#249aff;text-shadow:0 0 24px #007bff}.about-art div{font-size:10px;letter-spacing:.22em;color:#9facbf;margin-top:25px}.contact-panel{border:1px solid #325a8f66;border-radius:24px;padding:35px;display:flex;align-items:center;justify-content:space-between;gap:30px;background:linear-gradient(120deg,#101821,#12131b)}.schedule-action{display:flex;align-items:center;gap:15px;margin-top:17px}#calendar-msg{font-size:12px;color:#a5b5ca}.mobile-dock{display:none}.marq-item:nth-child(3) b,.marq-item:nth-child(4) b{font-size:14px}
@@ -43,6 +57,7 @@
 <a href="#agenda">Agenda</a>
 <a href="#redes">Redes</a>
 <a href="#discord">Discord</a>
+<a href="#loja">Loja</a>
 <a href="#parceiros">Parceiros</a>
 <a href="#apoiar">Apoiar</a>
 </nav>
@@ -56,7 +71,7 @@
 <div>
 <div class="eyebrow"><span class="line"></span> Site Oficial LORDJON</div>
 <h1>O teu espaço <span>de live.</span></h1>
-<p class="lead">Lives, gaming, futebol e bons momentos. Entra na comunidade LORDJON, acompanha os vídeos e descobre tudo o que acontece dentro e fora da stream.</p>
+<p class="lead">Lives, gaming e uma comunidade que faz parte da história. Entra, acompanha a transmissão e descobre a nova loja LORDJON Rewards.</p>
 <div class="hero-panel">
 <div class="mini-stat"><b>@lordjon_pt</b><small>Twitch · TikTok · YouTube · Instagram</small></div>
 <div class="mini-stat"><b>Família dos Lords</b><small>Comunidade oficial</small></div>
@@ -169,6 +184,26 @@
 </div>
 </div>
 </section>
+<section class="section shop-section" id="loja" aria-labelledby="loja-titulo">
+<div class="wrap">
+<div class="shop-intro">
+<div><div class="kicker">Fidelidade · Comunidade</div><h2 id="loja-titulo">LORDJON <span>REWARDS.</span></h2><p class="sub">A tua presença nas lives merece destaque. Estamos a preparar recompensas que podes resgatar com pontos de visualização.</p></div>
+<div class="shop-switch"><span aria-hidden="true">✦</span> LOJA EM PREPARAÇÃO</div>
+</div>
+<div class="shop-steps">
+<div class="shop-step"><small>01 / ASSISTE</small><b>Entra na live</b><p>Os Pontos do Canal são ganhos na Twitch, segundo as regras da plataforma.</p></div>
+<div class="shop-step"><small>02 / ACUMULA</small><b>Junta os teus pontos</b><p>Consulta o saldo diretamente no chat da Twitch. Ainda não é possível vê-lo aqui.</p></div>
+<div class="shop-step"><small>03 / RESGATA</small><b>Troca por recompensas</b><p>Quando ativarmos os produtos, os resgates serão feitos nas recompensas do canal.</p></div>
+</div>
+<div class="shop-head"><span class="shop-spark">✦</span><strong>Prévia do catálogo</strong> <span>· Exemplos sujeitos a confirmação</span></div>
+<div class="shop-list" style="margin-top:14px">
+<article class="shop-product"><div class="shop-art"><span class="shop-emoji" aria-hidden="true">🎙️</span></div><div class="shop-body"><span class="label">Interação na live</span><h3>Mensagem especial</h3><p>Uma mensagem ou saudação personalizada durante a transmissão, caso aprovada.</p><div class="shop-bottom"><span class="points-tag">Custo por definir</span><button class="shop-locked" disabled>Brevemente</button></div></div></article>
+<article class="shop-product"><div class="shop-art"><span class="shop-emoji" aria-hidden="true">🎮</span></div><div class="shop-body"><span class="label">Participação</span><h3>Escolhe o desafio</h3><p>Sugere um desafio para a próxima live, sujeito a regras e disponibilidade.</p><div class="shop-bottom"><span class="points-tag">Custo por definir</span><button class="shop-locked" disabled>Brevemente</button></div></div></article>
+<article class="shop-product"><div class="shop-art"><span class="shop-emoji" aria-hidden="true">⭐</span></div><div class="shop-body"><span class="label">Comunidade</span><h3>Destaque de fã</h3><p>Um destaque especial na comunidade LORDJON, se esta recompensa for ativada.</p><div class="shop-bottom"><span class="points-tag">Custo por definir</span><button class="shop-locked" disabled>Brevemente</button></div></div></article>
+</div>
+<div class="shop-warning"><span aria-hidden="true">ⓘ</span><div><b>Os resgates ainda não estão ativos.</b><p>Este catálogo é uma demonstração, não uma oferta atualmente disponível. Os Pontos do Canal da Twitch são geridos pela Twitch. O site não consegue consultar ou gastar diretamente o saldo de cada espetador. As recompensas terão de ser ativadas e resgatadas na Twitch. <a href="https://www.twitch.tv/lordjon_pt" target="_blank" rel="noopener noreferrer">Ver canal oficial</a>.</p></div></div>
+<div class="shop-actions"><a class="btn btn-primary" href="https://www.twitch.tv/lordjon_pt" target="_blank" rel="noopener noreferrer">Ver recompensas na Twitch ↗</a><a class="btn" href="https://discord.gg/familia-dos-lords-1324762035640336405" target="_blank" rel="noopener noreferrer">Entrar na comunidade ↗</a></div>
+</div></section>
 <section class="section alt" id="parceiros">
 <div class="wrap">
 <div class="section-head">
@@ -275,7 +310,7 @@ async function checkLive(){
 checkLive();
 setInterval(checkLive, 90000);
 </script>
-<nav aria-label="Acessos rápidos" class="mobile-dock"><a href="https://www.twitch.tv/lordjon_pt" rel="noopener" target="_blank"><span>▶</span> Live</a><a href="#videos"><span>▣</span> Vídeos</a><a href="#agenda"><span>▦</span> Agenda</a><a href="#discord"><span>#</span> Discord</a></nav><script>
+<nav aria-label="Acessos rápidos" class="mobile-dock"><a href="https://www.twitch.tv/lordjon_pt" rel="noopener" target="_blank"><span>▶</span> Live</a><a href="#videos"><span>▣</span> Vídeos</a><a href="#loja"><span>✦</span> Loja</a><a href="#discord"><span>#</span> Discord</a></nav><script>
 // O site estático usa um Worker separado para ler as APIs com segurança.
 const STREAM_API = window.LORDJON_API_URL || '';
 async function apiRead(endpoint){
