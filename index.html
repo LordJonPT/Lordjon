@@ -84,7 +84,23 @@ body:not(.landing-mode)>#link-hub{display:none}
 @media(max-width:420px){.hub-links-branded .hub-link{padding:15px;min-height:78px}.hub-links-branded .hub-icon{width:46px;height:46px;flex-basis:46px}.hub-links-branded .hub-link-copy strong{font-size:16px}.hub-links-branded .card-watermark{font-size:48px;right:34px}.hub-bg-bridge{width:170px;right:9px}}
 @media(prefers-reduced-motion:reduce){.hub-links-branded .hub-link,.hub-universe{transition:none}}
 
-</style>
+
+/* Universo LORDJON: versão visual com destaques e cartões de parceiros */
+body:not(.landing-mode) .hero{background:radial-gradient(ellipse at 85% 6%,rgba(23,116,225,.24),transparent 50%),radial-gradient(ellipse at 8% 80%,rgba(242,95,94,.09),transparent 38%),#090c14}
+body:not(.landing-mode) .hero h1 span{background:linear-gradient(95deg,#65c7ff,#1986fa,#8d6afe);background-clip:text;-webkit-background-clip:text;color:transparent;text-shadow:none}
+.hero-promos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:22px}.hero-promos a{display:flex;flex-direction:column;gap:5px;padding:14px 12px;border-radius:15px;background:linear-gradient(140deg,#172c48,#111722);border:1px solid #32537a;transition:transform .2s,border-color .2s}.hero-promos a:hover{transform:translateY(-3px);border-color:#5fb9ff}.hero-promos span{color:#82b7ee;font-size:9px;letter-spacing:.06em;font-weight:800}.hero-promos strong{font-size:13px}.hero-promos small{font-size:10px;color:#a4b5ca}
+.universe-video{background:radial-gradient(circle at 96% 0%,#8d131b27,transparent 45%),linear-gradient(160deg,#10131b,#080a0e);border-block:1px solid #ffffff15}
+.universe-video .kicker{color:#ff777f}
+.featured-video{display:grid;grid-template-columns:1.12fr .88fr;overflow:hidden;background:#151b26;border:1px solid #ffffff24;border-radius:26px;min-height:350px;box-shadow:0 20px 65px #0004;transition:transform .2s,border-color .2s}.featured-video:not(.placeholder-video):hover{transform:translateY(-4px);border-color:#fc5861}
+.featured-visual{position:relative;display:grid;place-items:center;min-height:300px;background:radial-gradient(circle at 30% 40%,#94222f9a,transparent 50%),linear-gradient(130deg,#431019,#100e1a)}.featured-visual img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover}.featured-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 65%,#0d121c98)}.featured-play{position:relative;z-index:2;display:grid;place-items:center;width:74px;height:74px;border:1px solid #ffffffaa;border-radius:50%;background:#e7212ba8;backdrop-filter:blur(10px);font-size:24px;padding-left:5px;box-shadow:0 0 32px #ed212b66}.featured-visual-logo{position:absolute;bottom:20px;left:25px;color:#fff9;font:900 31px 'Barlow Condensed',sans-serif}.featured-visual-logo span{color:#fc404a}.featured-detail{display:flex;flex-direction:column;justify-content:center;padding:36px}.featured-eyebrow{color:#ff8893;font-size:10px;font-weight:900;letter-spacing:.22em}.featured-detail h3{font:900 clamp(30px,4vw,48px)/1.02 'Barlow Condensed',sans-serif;margin:14px 0;text-transform:uppercase;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden}.featured-detail p{color:#a9b8ca;font-size:13px;margin-bottom:23px}.featured-detail .btn{align-self:flex-start;background:linear-gradient(110deg,#ef2332,#a91326);border-color:#f36a73}
+.latest-mini-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:29px 0 14px;font-size:12px;letter-spacing:.13em}.latest-mini-heading span{color:#8292a6;font-size:10px}.universe-video .video-grid{gap:15px}.universe-video .video-item{border-color:#ffffff26;background:#151923}.universe-video .video-item:hover{border-color:#f34a60}.universe-video .video-body h3{margin-bottom:7px}.universe-video .video-body small{color:#aab4c6}
+#parceiros{background:radial-gradient(circle at 90% 0%,#314f8528,transparent 39%),linear-gradient(170deg,#11141c,#090c12)}#parceiros .partners{gap:15px}#parceiros .partner{position:relative;overflow:hidden;min-height:205px;border:1px solid #ffffff29;box-shadow:0 8px 26px #0003}#parceiros .partner:before{content:"";position:absolute;left:0;right:0;top:0;height:5px;background:linear-gradient(90deg,#1a8cff,#7bc7ff)}#parceiros .partner:nth-child(1){background:radial-gradient(circle at 100% 0%,#dcf52a29,transparent 55%),#1c2518}#parceiros .partner:nth-child(1):before{background:#c6e54b}#parceiros .partner:nth-child(2){background:radial-gradient(circle at 100% 0%,#fb781d38,transparent 55%),#241a14}#parceiros .partner:nth-child(2):before{background:#f1933c}#parceiros .partner:nth-child(3){background:radial-gradient(circle at 100% 0%,#8e75d93f,transparent 55%),#19162a}#parceiros .partner:nth-child(3):before{background:#9774f8}#parceiros .partner:nth-child(4){background:radial-gradient(circle at 100% 0%,#f678233c,transparent 55%),#21170e}#parceiros .partner:nth-child(4):before{background:#fa8c24}#parceiros .partner:nth-child(5){background:radial-gradient(circle at 100% 0%,#267bef41,transparent 55%),#111b2f}#parceiros .partner:nth-child(5):before{background:#559bff}
+#parceiros .partner h4{font-size:clamp(25px,2.7vw,35px)}#parceiros .partner .p-foot{color:#fff}#parceiros .partner .coupon{background:#ffffff16;border-color:#ffffff26;color:#f8f8f8}
+.shop-section .shop-product:nth-child(1){border-color:#5085c56e}.shop-section .shop-product:nth-child(2){border-color:#cc924b5d}.shop-section .shop-product:nth-child(3){border-color:#8a5bce5d}
+body:not(.landing-mode) .support-box{background:radial-gradient(circle at 87% 18%,#ef6d2850,transparent 35%),linear-gradient(105deg,#122b52,#101722);border-color:#356dae}
+@media(max-width:880px){.featured-video{grid-template-columns:1fr}.featured-visual{aspect-ratio:16/9;min-height:0}.featured-detail{padding:24px}.hero-promos{grid-template-columns:1fr}.hero-promos a{padding:14px 18px}.hero-promos strong{font-size:16px}}
+
+#clips .clip-tile:nth-child(1){background:linear-gradient(145deg,#052d33,#121720);border-color:#4ed6da44}#clips .clip-tile:nth-child(2){background:linear-gradient(145deg,#58121c,#17131b);border-color:#e74c5a44}#clips .clip-tile:nth-child(3){background:linear-gradient(145deg,#322056,#15111e);border-color:#9c79ee44}#clips .clip-tile:nth-child(1) .clip-cover{background:linear-gradient(130deg,#17343c,#131826);color:#59e2eb}#clips .clip-tile:nth-child(2) .clip-cover{background:linear-gradient(130deg,#631823,#19121b);color:#ff7782}#clips .clip-tile:nth-child(3) .clip-cover{background:linear-gradient(130deg,#492e6a,#1b152a);color:#bc91ff}</style>
 <style>
 .video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.video-item,.video-placeholder{display:flex;flex-direction:column;overflow:hidden;background:#141923;border:1px solid rgba(255,255,255,.08);border-radius:20px;transition:transform .2s,border-color .2s}.video-item:hover{transform:translateY(-4px);border-color:#328ce8}.video-item img{aspect-ratio:16/9;object-fit:cover;width:100%;background:#0a1527}.video-body{padding:18px}.video-body h3{font:800 23px/1.07 'Barlow Condensed',sans-serif;margin:0 0 12px}.video-body p,.video-body small{font-size:12px;color:#a8b5c7}.video-body a{color:#71bdff;font-size:12px;font-weight:800}.video-visual{min-height:170px;display:grid;place-items:center;font-size:58px;color:#47a2ff;background:radial-gradient(circle,#173b6d,#111721)}.clip-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.clip-tile{display:flex;flex-direction:column;gap:10px;border-radius:20px;padding:14px;background:#131820;border:1px solid rgba(255,255,255,.08);transition:transform .2s}.clip-tile:hover{transform:translateY(-4px)}.clip-cover{height:220px;border-radius:13px;background:linear-gradient(145deg,#192f51,#11141c 60%,#4d2a12);display:grid;place-items:center;color:#66b8ff;text-shadow:0 0 24px #167fe5;font-size:58px}.clip-tile b{font-size:14px}.clip-tile span{font-size:12px;color:#70baff}.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center}.about-art{border:1px solid rgba(83,163,255,.3);border-radius:24px;padding:48px 20px;min-height:270px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(circle at center,rgba(24,112,220,.26),transparent 56%),#101318;box-shadow:inset 0 0 80px #0b43852b}.about-script{font:400 clamp(60px,7vw,110px)/1 'Yellowtail',cursive;text-shadow:0 0 20px #b8ceff44}.about-script b{font-weight:400;color:#249aff;text-shadow:0 0 24px #007bff}.about-art div{font-size:10px;letter-spacing:.22em;color:#9facbf;margin-top:25px}.contact-panel{border:1px solid #325a8f66;border-radius:24px;padding:35px;display:flex;align-items:center;justify-content:space-between;gap:30px;background:linear-gradient(120deg,#101821,#12131b)}.schedule-action{display:flex;align-items:center;gap:15px;margin-top:17px}#calendar-msg{font-size:12px;color:#a5b5ca}.mobile-dock{display:none}.marq-item:nth-child(3) b,.marq-item:nth-child(4) b{font-size:14px}
 @media(max-width:850px){.video-grid,.clip-grid{grid-template-columns:repeat(2,1fr)}.about-grid{grid-template-columns:1fr}.contact-panel{flex-direction:column;align-items:flex-start}}
@@ -107,7 +123,7 @@ body:not(.landing-mode)>#link-hub{display:none}
 <a href="#redes">Redes</a>
 <a href="#discord">Discord</a>
 <a href="#loja">Loja</a>
-<a href="#parceiros">Parceiros</a>
+<a href="#parceiros">Parceiros & Ofertas</a>
 <a href="#apoiar">Apoiar</a>
 </nav>
 <button type="button" id="back-links" class="back-to-links">← Links e redes</button><a class="cta-nav" href="https://www.twitch.tv/lordjon_pt" rel="noopener" target="_blank">Ver Twitch ↗</a>
@@ -130,7 +146,7 @@ body:not(.landing-mode)>#link-hub{display:none}
 <a class="btn btn-primary" href="https://www.twitch.tv/lordjon_pt" rel="noopener" target="_blank">Ver live ↗</a>
 <a class="btn btn-amber" href="https://discord.gg/familia-dos-lords-1324762035640336405" rel="noopener" target="_blank">Entrar no Discord ↗</a>
 </div>
-<p class="hero-note">O universo LORDJON, agora num espaço só teu.</p>
+<p class="hero-note">Explora episódios, comunidades, descontos dos parceiros e as próximas recompensas.</p><div class="hero-promos"><a href="#videos"><span>01 / CONTEÚDO</span><strong>Último vídeo</strong><small>Ver episódio e thumbnail ↗</small></a><a href="#parceiros"><span>02 / DESCONTOS</span><strong>Parceiros oficiais</strong><small>Explorar marcas e ofertas ↗</small></a><a href="#loja"><span>03 / RECOMPENSAS</span><strong>LORDJON Rewards</strong><small>Conhecer a loja ↗</small></a></div>
 </div>
 <div class="hero-art">
 <div class="hero-frame">
@@ -175,7 +191,11 @@ body:not(.landing-mode)>#link-hub{display:none}
 </div>
 </div>
 </section>
-<section class="section" id="videos"><div class="wrap"><div class="section-head"><div><div class="kicker">YouTube / Últimos episódios</div><h2>Acabado de <span>sair.</span></h2><p class="sub">Os vídeos mais recentes do canal vão aparecer aqui automaticamente quando a ligação estiver ativa.</p></div><a class="btn" href="https://www.youtube.com/@lordjon_pt/videos" rel="noopener" target="_blank">Ver canal ↗</a></div><div aria-live="polite" class="video-grid" id="recent-videos"><article class="card video-placeholder"><div class="video-visual">▶</div><div class="video-body"><h3>Últimos vídeos do LORDJON</h3><p>Explora já os episódios no YouTube. A atualização automática ainda está por configurar.</p><a href="https://www.youtube.com/@lordjon_pt/videos" rel="noopener" target="_blank">Abrir vídeos ↗</a></div></article></div></div></section>
+<section class="section universe-video" id="videos"><div class="wrap">
+<div class="section-head"><div><div class="kicker">YouTube · Última publicação</div><h2>ACABOU DE <span>SAIR.</span></h2><p class="sub">O vídeo mais recente em destaque com a thumbnail e acesso direto. Os episódios seguintes aparecem logo abaixo.</p></div><a class="btn video-channel" href="https://www.youtube.com/@lordjon_pt/videos" rel="noopener" target="_blank">Ver todos os vídeos ↗</a></div>
+<div id="featured-video" class="featured-video placeholder-video" aria-live="polite"><div class="featured-visual"><div class="featured-play" aria-hidden="true">▶</div><div class="featured-visual-logo">LORD<span>JON</span></div></div><div class="featured-detail"><div class="featured-eyebrow">NOVO NO CANAL</div><h3>O PRÓXIMO EPISÓDIO ESTÁ A CAMINHO.</h3><p>Assim que a integração do YouTube estiver configurada, este cartão mostra automaticamente o último vídeo com thumbnail e link direto.</p><a href="https://www.youtube.com/@lordjon_pt/videos" class="btn btn-primary" target="_blank" rel="noopener">ABRIR YOUTUBE ↗</a></div></div>
+<div class="latest-mini-heading"><strong>MAIS EPISÓDIOS</strong><span>Atualização automática</span></div><div aria-live="polite" class="video-grid" id="recent-videos"><article class="card video-placeholder"><div class="video-body"><h3>Os vídeos aparecem aqui</h3><p>Os três episódios mais recentes ficam disponíveis quando a API estiver ativa.</p><a href="https://www.youtube.com/@lordjon_pt/videos" rel="noopener" target="_blank">Visitar canal ↗</a></div></article></div>
+</div></section>
 <section class="section alt" id="clips"><div class="wrap"><div class="section-head"><div><div class="kicker">Highlights / Momentos</div><h2>Os melhores <span>clips.</span></h2><p class="sub">Momentos das lives, jogadas e os cortes mais memoráveis.</p></div></div><div class="clip-grid"><a class="clip-tile" href="https://www.tiktok.com/@lordjon_pt" rel="noopener" target="_blank"><div class="clip-cover">♪</div><b>Melhores momentos no TikTok</b><span>Abrir clips ↗</span></a><a class="clip-tile" href="https://www.youtube.com/@lordjon_pt/shorts" rel="noopener" target="_blank"><div class="clip-cover">▶</div><b>Shorts no YouTube</b><span>Ver shorts ↗</span></a><a class="clip-tile" href="https://www.twitch.tv/lordjon_pt/clips" rel="noopener" target="_blank"><div class="clip-cover">✦</div><b>Clips da Twitch</b><span>Ver clips ↗</span></a></div></div></section><section class="section" id="agenda">
 <div class="wrap">
 <div class="section-head">
@@ -259,7 +279,7 @@ body:not(.landing-mode)>#link-hub{display:none}
 <div>
 <div class="kicker">Parceiros</div>
 <h2>Marcas &amp; <span>parcerias.</span></h2>
-<p class="sub">As marcas e projetos que fazem parte da comunidade LORDJON.</p>
+<p class="sub">Descobre os nossos parceiros, aproveita os links e códigos divulgados e ajuda a apoiar a criação de novos conteúdos.</p>
 </div>
 </div>
 <div class="partners">
@@ -388,8 +408,25 @@ function createVideo(v){
  const small=document.createElement('small');small.textContent=v.publishedAt?new Intl.DateTimeFormat('pt-PT',{day:'numeric',month:'short',year:'numeric'}).format(new Date(v.publishedAt)):'YouTube';
  box.append(h,small);a.append(im,box);return a;
 }
-async function loadVideos(){try{const data=await apiRead('/videos');if(!Array.isArray(data.videos)||!data.videos.length)return;
- const grid=document.querySelector('#recent-videos');grid.replaceChildren(...data.videos.slice(0,3).filter(v=>/^[a-zA-Z0-9_-]{11}$/.test(v.id)).map(createVideo));}catch(e){}
+async function loadVideos(){
+ try{
+  const response=await fetch('/api/videos',{cache:'no-store'});
+  if(!response.ok)throw new Error('videos unavailable');
+  const data=await response.json();
+  if(!Array.isArray(data.videos)||!data.videos.length)return;
+  const videos=data.videos.slice(0,3).filter(v=>/^[a-zA-Z0-9_-]{11}$/.test(v.id));if(!videos.length)return;
+  const grid=document.getElementById('recent-videos');grid.replaceChildren(...videos.map(createVideo));
+  const last=videos[0];const featured=document.getElementById('featured-video');
+  const a=document.createElement('a');a.href='https://www.youtube.com/watch?v='+encodeURIComponent(last.id);a.target='_blank';a.rel='noopener noreferrer';a.className='featured-visual';a.setAttribute('aria-label','Ver último vídeo: '+(last.title||'LORDJON'));
+  const img=document.createElement('img');img.src='https://i.ytimg.com/vi/'+encodeURIComponent(last.id)+'/maxresdefault.jpg';img.onerror=()=>{img.onerror=null;img.src='https://i.ytimg.com/vi/'+encodeURIComponent(last.id)+'/hqdefault.jpg'};img.alt='Thumbnail do vídeo: '+(last.title||'LORDJON');img.loading='lazy';
+  const play=document.createElement('span');play.className='featured-play';play.textContent='▶';play.setAttribute('aria-hidden','true');a.append(img,play);
+  const detail=document.createElement('div');detail.className='featured-detail';
+  const tag=document.createElement('div');tag.className='featured-eyebrow';tag.textContent='ÚLTIMO VÍDEO DO LORDJON';
+  const h=document.createElement('h3');h.textContent=last.title||'Novo vídeo LORDJON';
+  const p=document.createElement('p');p.textContent=last.publishedAt?'Publicado em '+new Intl.DateTimeFormat('pt-PT',{day:'numeric',month:'long',year:'numeric'}).format(new Date(last.publishedAt)):'Já disponível no YouTube';
+  const link=document.createElement('a');link.className='btn btn-primary';link.href=a.href;link.target='_blank';link.rel='noopener noreferrer';link.textContent='VER EPISÓDIO NO YOUTUBE ↗';
+  detail.append(tag,h,p,link);featured.classList.remove('placeholder-video');featured.replaceChildren(a,detail);
+ }catch(e){/* mantém o acesso ao canal se a integração não estiver pronta */}
 }
 loadVideos();setInterval(loadVideos,20*60*1000);
 const calButton=document.getElementById('calendar-export');
